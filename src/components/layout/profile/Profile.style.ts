@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 
 export const ProfileWrapper = styled.div`
-    width: 1100px;
+    width: 1200px;
     border: 1px solid blue;
     margin: 0 auto;
     padding: 50px;
