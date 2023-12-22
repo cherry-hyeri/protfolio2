@@ -2,17 +2,12 @@ import styled from "@emotion/styled"
 
 export const ProfileWrapper = styled.div`
     width: 1200px;
-    border: 1px solid blue;
     margin: 0 auto;
     padding: 50px;
 `
 
-export const ProfileImg = styled.div`
-    border: 1px solid red;
+export const ProfileImg = styled.img`
     width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    display: inline-block;
 `
 
 export const Profilecontent = styled.div`

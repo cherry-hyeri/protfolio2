@@ -4,7 +4,7 @@ import * as S from "./Profile.style";
 export default function LayoutProfile() {
   return (
     <S.ProfileWrapper>
-      <S.ProfileImg></S.ProfileImg>
+      <S.ProfileImg src="images/profile.png"></S.ProfileImg>
       <S.Profilecontent>
         <S.ProfileHedaer>Front-end 개발자 홍혜리입니다.</S.ProfileHedaer>
         <p>
