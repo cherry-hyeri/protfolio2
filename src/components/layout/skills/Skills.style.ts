@@ -22,10 +22,11 @@ export const SkillContainer = styled.div`
 export const SkillBox = styled.div`
     width: 340px;
     height: 340px;
-    border: 1px solid black;
+    // border: 1px solid black;
     border-radius: 30px;
     padding: 20px;
     position: relative;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
 `
 
 export const Boxtitle = styled.span`
@@ -56,4 +57,29 @@ export const IconBox = styled.div`
 export const Icon = styled.img`
     display: inline-bolck;
     margin-top: 30px;
+    width: 40px;
+`
+
+export const Icon2 = styled.img`
+    display: inline-block;
+    margin-top: 30px;
+    width: 55px;
+`
+
+export const Icon3 = styled.img`
+    display: inline-block;
+    margin-top: 30px;
+    width: 100px;
+`
+
+export const Icon4 = styled.img`
+    display: inline-block;
+    margin-top: 30px;
+    width: 210px;
+`
+
+export const Icon5 = styled.img`
+    display: inline-block;
+    margin-top: 30px;
+    width: 205px;
 `

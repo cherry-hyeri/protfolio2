@@ -7,7 +7,9 @@ export const ProfileWrapper = styled.div`
 `
 
 export const ProfileImg = styled.img`
-    width: 90px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
 `
 
 export const Profilecontent = styled.div`

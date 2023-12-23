@@ -20,7 +20,18 @@ export const ContainerBox = styled.div`
 `
 
 export const BoxWrapper = styled.div`
+    position: relative;
     width: 330px;
     height: 260px;
     background: gray;
+`
+
+export const Boxinfo = styled.div`
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 330px;
+    height: 260px;
+    background: #fff;
 `
