@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Keyframes, keyframes } from "@emotion/react";
+import { keyframes } from "@emotion/react";
 
 export const Wrapper = styled.div`
     width: 1200px;
@@ -19,14 +19,32 @@ export const SkillContainer = styled.div`
     align-items: center;
     list-style: none;
 `
+
+export const Fluffy = keyframes`
+    0% {
+        top: 3px;
+
+    }
+
+    60% {
+        top: -10px;
+    }
+
+    100% {
+        top: 5px;
+    }
+`
+
 export const SkillBox = styled.div`
     width: 340px;
     height: 340px;
-    // border: 1px solid black;
     border-radius: 30px;
     padding: 20px;
     position: relative;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    &:hover {
+        animation: ${Fluffy} 3s linear infinite;
+    }
 `
 
 export const Boxtitle = styled.span`

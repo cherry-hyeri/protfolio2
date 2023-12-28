@@ -24,10 +24,17 @@ export default function LayoutProfile() {
           <S.Github>
             <S.IconGit src="images/github.png" />
             github :
-            <Link href="https://github.com/cherry-hyeri">
+            <Link
+              href="https://github.com/cherry-hyeri"
+              style={{ textDecoration: "none" }}
+            >
               <S.Giturl>https://github.com/cherry-hyeri</S.Giturl>
             </Link>
           </S.Github>
+          <S.Contect>
+            <S.IconEmail src="images/certificate.png" />
+            Certificate : GTQ 1급, 웹디자인기능사
+          </S.Contect>
         </div>
       </S.Profilecontent>
     </S.ProfileWrapper>

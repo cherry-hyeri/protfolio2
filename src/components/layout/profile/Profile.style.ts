@@ -30,6 +30,7 @@ export const Contect = styled.div`
 export const Github = styled.div`
     margin-top: 5px;
     margin-left: 15px;
+    margin-right: 15px;
     display: inline-block;
 `
 
@@ -38,10 +39,10 @@ export const Giturl = styled.span`
     color: black;
     text-decoration: none;
 
-    :active {
+    &:active {
         color: black;
     }
-    :hover {
+    &:hover {
         color: gray;
     }
 `
