@@ -1,11 +1,25 @@
 import styled from "@emotion/styled";
 import { keyframes } from "@emotion/react";
 
+export const Fluffy = keyframes`
+    0% {
+        top: 3px;
+
+    }
+
+    60% {
+        top: -10px;
+    }
+
+    100% {
+        top: 5px;
+    }
+`
+
 export const Wrapper = styled.div`
     width: 1200px;
     margin: 0 auto;
     padding: 40px 50px;
-    border: 1px solid red;
 `
 
 export const Title = styled.h2`
@@ -24,7 +38,11 @@ export const BoxWrapper = styled.div`
     position: relative;
     width: 330px;
     height: 260px;
-    background: gray;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    over-flow: hidden;
 
     &:hover .Boxinfo {
         display: block;
@@ -64,12 +82,13 @@ export const Boxinfo = styled.div`
     left: 0;
     width: 330px;
     height: 260px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(3,3,3,0.8);
+    border-radius: 5px;
 `
 
 export const Workimg = styled.img`
+    padding-top: 20px;
     width: 100%;
-    height: 100%;
 `
 
 export const Infotxt = styled.div`
@@ -99,6 +118,13 @@ export const InfoTitle = styled.p`
         background: #fff;
     }
 `
+
+export const Text = styled.p`
+    width: 290px;
+    word-break: keep-all;
+    line-height: 1.7;
+`
+
 export const InfoButton = styled.button`
     margin-top: 20px;
     padding: 10px;
