@@ -42,7 +42,7 @@ export const BoxWrapper = styled.div`
     background: #f9f9f9;
     border-radius: 5px;
     margin-bottom: 50px;
-    over-flow: hidden;
+    text-align: center;
 
     &:hover .Boxinfo {
         display: block;
@@ -75,6 +75,36 @@ export const Blink = keyframes`
     }
 `
 
+export const BoxBorder = styled.span`
+    position: absolute;
+    background-color: #fff;
+    transition: all 0.5s;
+    &:nth-of-type(1) {
+        left: 15px;
+        top: 15px;
+        width: 0;
+        height: 1px;    
+    }
+    &:nth-of-type(2) {
+        right: 15px;
+        top: 15px;
+        width: 1px;
+        height: 0;
+    }
+    &:nth-of-type(3) {
+        right: 15px;
+        bottom: 15px;
+        width: 0;
+        height: 1px;
+    }
+    &:nth-of-type(4) {
+        left: 15px;
+        bottom: 15px;
+        width: 1px;
+        height: 0;
+    }
+`
+
 export const Boxinfo = styled.div`
     display: none;
     position: absolute;
@@ -84,6 +114,19 @@ export const Boxinfo = styled.div`
     height: 260px;
     background: rgba(3,3,3,0.8);
     border-radius: 5px;
+
+    &:hover .boxBorder:nth-of-type(1) {
+        width: 90.7%;
+    }
+    &:hover .boxBorder:nth-of-type(2) {
+        height: 88%;
+    }
+    &:hover .boxBorder:nth-of-type(3) {
+        width: 90.7%;
+    }
+    &:hover .boxBorder:nth-of-type(4) {
+        height: 88%;
+    }
 `
 
 export const Workimg = styled.img`
@@ -92,18 +135,21 @@ export const Workimg = styled.img`
 `
 
 export const Infotxt = styled.div`
-    padding: 60px 0;
+    padding: 52px 0;
     display: flex;
     flex-direction: column;
     color: #fff;
     text-align: center;
     align-items: center;
     animation: ${Blink} 1s linear;
+
+    &.infotxt {
+        padding: 57px 0;
+    }
 `
 
 export const InfoTitle = styled.p`
     position: relative;
-    margin-bottom: 40px;
     font-size: 22px;
     font-weigth: 600;
 
@@ -120,6 +166,14 @@ export const InfoTitle = styled.p`
 `
 
 export const Text = styled.p`
+    margin-top: 40px;
+    width: 290px;
+    word-break: keep-all;
+    line-height: 1.7;
+`
+
+export const Text2 = styled.p`
+    margin-top: 25px;
     width: 290px;
     word-break: keep-all;
     line-height: 1.7;
@@ -133,4 +187,9 @@ export const InfoButton = styled.button`
     background: #fff;
     cursor: pointer;
     text-align: center;
+`
+
+export const notice = styled.span`
+    font-size: 11px;
+    color: #999;
 `
