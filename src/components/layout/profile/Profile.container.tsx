@@ -9,7 +9,7 @@ export default function LayoutProfile() {
         <S.ProfileHedaer>Front-end 개발자 홍혜리입니다.</S.ProfileHedaer>
         <p>
           스스로의 가치를 더할 수 있는 기회를 탐색하기위해 항상 준비되어
-          있습니다.!!
+          있습니다.
           <br />
           퍼블리셔로 업무를 진행하면서 더 다양한 기술을 배워 프로젝트에 기여하고
           싶었고 프론트엔드개발자로 전향하는 계기가 되었습니다.
