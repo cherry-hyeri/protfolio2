@@ -1,7 +1,9 @@
 import Link from "next/link";
 import * as S from "./Works.style";
+import { useRouter } from "next/router";
 
 export default function LayoutWorks() {
+  const router = useRouter();
   return (
     <>
       <S.Wrapper>
@@ -128,21 +130,14 @@ export default function LayoutWorks() {
               style={{ padding: "0px", width: "73%" }}
             ></S.Workimg>
             <S.Boxinfo className="Boxinfo">
-              <Link
-                href="https://www.adbid.co.kr/"
-                style={{ textDecoration: "none" }}
-                target="_blank"
-              >
-                <S.BoxBorder className="boxBorder"></S.BoxBorder>
-                <S.BoxBorder className="boxBorder"></S.BoxBorder>
-                <S.BoxBorder className="boxBorder"></S.BoxBorder>
-                <S.BoxBorder className="boxBorder"></S.BoxBorder>
-                <S.Infotxt className="infotxt">
-                  <S.InfoTitle>육회마왕</S.InfoTitle>
-                  <S.Text>육회마왕 배너 디자인 시안 작업물입니다.</S.Text>
-                  <S.InfoButton>보러가기</S.InfoButton>
-                </S.Infotxt>
-              </Link>
+              <S.BoxBorder className="boxBorder"></S.BoxBorder>
+              <S.BoxBorder className="boxBorder"></S.BoxBorder>
+              <S.BoxBorder className="boxBorder"></S.BoxBorder>
+              <S.BoxBorder className="boxBorder"></S.BoxBorder>
+              <S.Infotxt className="infotxt">
+                <S.InfoTitle>육회마왕</S.InfoTitle>
+                <S.Text>육회마왕 배너 디자인 시안 작업물입니다.</S.Text>
+              </S.Infotxt>
             </S.Boxinfo>
           </S.BoxWrapper>
         </S.ContainerBox>
@@ -150,11 +145,7 @@ export default function LayoutWorks() {
           <S.BoxWrapper className="Boxwrapper">
             <S.Workimg src="images/works/adbid.png"></S.Workimg>
             <S.Boxinfo className="Boxinfo">
-              <Link
-                href="https://www.adbid.co.kr/"
-                style={{ textDecoration: "none" }}
-                target="_blank"
-              >
+              <Link href="/" style={{ textDecoration: "none" }} target="_blank">
                 <S.BoxBorder className="boxBorder"></S.BoxBorder>
                 <S.BoxBorder className="boxBorder"></S.BoxBorder>
                 <S.BoxBorder className="boxBorder"></S.BoxBorder>
@@ -223,21 +214,27 @@ export default function LayoutWorks() {
           <S.BoxWrapper className="Boxwrapper">
             <S.Workimg src="images/works/hero1.png"></S.Workimg>
             <S.Boxinfo className="Boxinfo">
-              <S.BoxBorder className="boxBorder"></S.BoxBorder>
-              <S.BoxBorder className="boxBorder"></S.BoxBorder>
-              <S.BoxBorder className="boxBorder"></S.BoxBorder>
-              <S.BoxBorder className="boxBorder"></S.BoxBorder>
-              <S.Infotxt>
-                <S.InfoTitle>빌딩히어로</S.InfoTitle>
-                <S.Text>
-                  건물관리 서비스 제공하는 웹 사이트입니다.
-                  <br />
-                  <S.notice>
-                    * 업체 사정으로 사이트 미 운영중 소스코드로 대체
-                  </S.notice>
-                </S.Text>
-                <S.InfoButton>보러가기</S.InfoButton>
-              </S.Infotxt>
+              <Link
+                href="https://github.com/he-hea/building"
+                style={{ textDecoration: "none" }}
+                target="_blank"
+              >
+                <S.BoxBorder className="boxBorder"></S.BoxBorder>
+                <S.BoxBorder className="boxBorder"></S.BoxBorder>
+                <S.BoxBorder className="boxBorder"></S.BoxBorder>
+                <S.BoxBorder className="boxBorder"></S.BoxBorder>
+                <S.Infotxt>
+                  <S.InfoTitle>빌딩히어로</S.InfoTitle>
+                  <S.Text>
+                    건물관리 서비스 제공하는 웹 사이트입니다.
+                    <br />
+                    <S.notice>
+                      * 업체 사정으로 사이트 미 운영중 소스코드로 대체
+                    </S.notice>
+                  </S.Text>
+                  <S.InfoButton>보러가기</S.InfoButton>
+                </S.Infotxt>
+              </Link>
             </S.Boxinfo>
           </S.BoxWrapper>
           <S.BoxWrapper className="Boxwrapper">
@@ -263,17 +260,23 @@ export default function LayoutWorks() {
           <S.BoxWrapper className="Boxwrapper">
             <S.Workimg src="images/works/kiwom.png"></S.Workimg>
             <S.Boxinfo className="Boxinfo">
-              <S.BoxBorder className="boxBorder"></S.BoxBorder>
-              <S.BoxBorder className="boxBorder"></S.BoxBorder>
-              <S.BoxBorder className="boxBorder"></S.BoxBorder>
-              <S.BoxBorder className="boxBorder"></S.BoxBorder>
-              <S.Infotxt>
-                <S.InfoTitle>키움저축은행</S.InfoTitle>
-                <S.Text>
-                  키움저축은행 웹 사이트입니다. 유지보수 진행했습니다.
-                </S.Text>
-                <S.InfoButton>보러가기</S.InfoButton>
-              </S.Infotxt>
+              <Link
+                href="https://www.kiwoombank.com/"
+                style={{ textDecoration: "none" }}
+                target="_blank"
+              >
+                <S.BoxBorder className="boxBorder"></S.BoxBorder>
+                <S.BoxBorder className="boxBorder"></S.BoxBorder>
+                <S.BoxBorder className="boxBorder"></S.BoxBorder>
+                <S.BoxBorder className="boxBorder"></S.BoxBorder>
+                <S.Infotxt>
+                  <S.InfoTitle>키움저축은행</S.InfoTitle>
+                  <S.Text>
+                    키움저축은행 웹 사이트입니다. 유지보수 진행했습니다.
+                  </S.Text>
+                  <S.InfoButton>보러가기</S.InfoButton>
+                </S.Infotxt>
+              </Link>
             </S.Boxinfo>
           </S.BoxWrapper>
         </S.ContainerBox>
@@ -288,7 +291,7 @@ export default function LayoutWorks() {
               <S.BoxBorder className="boxBorder"></S.BoxBorder>
               <S.BoxBorder className="boxBorder"></S.BoxBorder>
               <S.BoxBorder className="boxBorder"></S.BoxBorder>
-              <S.Infotxt>
+              <S.Infotxt style={{ padding: "85px 0" }}>
                 <S.InfoTitle>JT친애저축은행</S.InfoTitle>
                 <S.Text>모바일 어플 여신쪽 신규메뉴 작업</S.Text>
               </S.Infotxt>
